@@ -1,0 +1,28 @@
+package com.pattern.observer;
+
+public class DiscussionParticipant implements IObserver {
+	private String name;
+	private DiscussionTopic topic;
+	
+	public DiscussionParticipant(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public void update() {
+		String msg = (String) topic.getUpdate(this);
+		if(msg == null) {
+			System.out.println(name + ":: No new message");
+			
+			return;
+		}
+		
+		System.out.println(name + ":: Consuming message::" + msg);
+	}
+
+	@Override
+	public void setSubject(ISubject sub) {
+		this.topic = sub;
+	}
+
+}

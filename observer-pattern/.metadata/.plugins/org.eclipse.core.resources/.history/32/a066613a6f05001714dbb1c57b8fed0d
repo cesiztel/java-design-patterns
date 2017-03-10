@@ -1,0 +1,23 @@
+package com.pattern.observer;
+
+public class DiscussionParticipant implements IObserver {
+	private String name;
+	private DiscussionTopic messagingService;
+	
+	public DiscussionParticipant(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public void update() {
+		String msg = (String) topic.getUpdate(this);
+		
+	}
+
+	@Override
+	public void setSubject(ISubject sub) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

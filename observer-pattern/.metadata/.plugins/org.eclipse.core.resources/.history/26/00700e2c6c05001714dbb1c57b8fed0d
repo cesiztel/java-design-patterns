@@ -1,0 +1,12 @@
+package com.pattern.observer;
+
+public interface ISubject {
+	
+	public void register(IObserver obj);
+	
+	public void unregister(IObserver obj);
+	
+	public void notifyAll();
+	
+	public IObject getUpdate(IObject obj);
+}

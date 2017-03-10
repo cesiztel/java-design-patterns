@@ -1,0 +1,13 @@
+package com.pattern.observer;
+
+public class Discussion {
+
+	public static void main(String[] args) {
+		// Create a new DiscussionTopic
+		DiscussionTopic topic = new DiscussionTopic();
+		
+		// Create participants
+		DiscussionParticipant participant1 = new DiscussionParticipant();
+	}
+
+}

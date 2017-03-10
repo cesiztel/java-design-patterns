@@ -1,0 +1,34 @@
+package com.pattern.observer;
+
+import java.util.List;
+
+public class Messaging implements ISubject {
+	private List<IObserver> observers;
+	private String message;
+	private
+
+	@Override
+	public void register(IObserver obj) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void unregister(IObserver obj) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void notifyObservers() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Object getUpdate(IObserver obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
